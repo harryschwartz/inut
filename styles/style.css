@@ -30,4 +30,24 @@ h1 {
     width: 100%; /* Elements take full width of the container */
     box-sizing: border-box; /* Ensures padding and borders are included in the width */
     margin-bottom: 10px; /* Adds space below each element */
+    font-family: 'Source Sans 3', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: medium;
+    padding: 10px 10px;
+}
+
+#emailInput {
+   font-weight: lighter;
+}
+
+#emailForm button {
+  color: white;
+  background-color: #256B62;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+#emailForm button:hover {
+    background-color: black;
 }
