@@ -18,6 +18,12 @@ h1 {
     color: #256B62;
 }
 
+h2 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: lighter;
+    color: #256B62;
+}
+
 .form-container {
     max-width: 300px; /* Adjust this value as needed */
     margin: auto; /* This centers the container */
@@ -34,6 +40,7 @@ h1 {
     font-style: normal;
     font-size: medium;
     padding: 10px 10px;
+    border-radius: 5px;
 }
 
 #emailInput {
