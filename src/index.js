@@ -5,6 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault(); // Prevent the actual form submission
         // Add your form data handling logic here
         // Redirect to the thank you page
-        window.location.href = 'www.inut.lol/submission.html';
+        window.location.href = 'https://www.inut.lol/submission.html';
     });
 });
