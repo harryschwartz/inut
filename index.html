@@ -1,29 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--HTML Shit-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Document Title-->
     <title>iNut</title>
+    <!--Style Sheet-->
+    <link rel="stylesheet" href="public/styles/style.css">
     <!--Amatic Sans Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-    <!--Source Sans 3-->
+    <!--Open Sans-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <img src="assets/acorns.png" alt="two scrumptious acorns" class="drop-shadow">
+    <section id="homeDisplay">
+        <img id="acorn" src="public/assets/acorns.png" alt="two scrumptious acorns" class="drop-shadow">
+        <!--<h1 class="display1 green">Coming Soon</h1>-->
+        <br>
+        <p2>You just nutted </p2> <p2 id="nutDisplay">0</p2> <p2>time(s).</p2>
+        <br><br>
+        <button class="button"  onclick="addNut()">Click to Nut</button>
+        <br>
+        <button class="secondaryButton" onclick="reset()">Reset</button>
+    </section>
+    <script>
+        let nutCount = 0;
+        function addNut() {
+            nutCount++;
+            document.getElementById("nutDisplay").innerText = nutCount;
+        };
+        function reset() {
+            nutCount=0;
+            document.getElementById("nutDisplay").innerText = nutCount;
+        }
+    </script>
+
+    <!-- PREVIOUS FORM
     <div class="form-container">
-    <h1>Coming Soon</h1>
-    <form id="emailForm">
-        <input type="email" id="emailInput" placeholder="Enter Email Address">
-        <button type="submit">Join the Waitlist</button>
-    </form>
+        <form id="emailForm" action="/submit" method="post">
+            <input type="email" id="emailInput" placeholder="Enter Email Address" name="mailingListInput">
+            <button type="submit" class="button" name="mailingListButton">Subscribe for Updates</button>
+
+        </form>
     </div>
     
-    <script src="dist/main.js"></script>
+    <script src="dist/main.js"></script> -->
 </body>
 </html>
+
+ <!-- for future reference:
+            this is how to link to another page in src
+            <a href="./submission.html">Join the Waitlist</a> 
+        -->
